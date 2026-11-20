@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="rambling-architect-logo-v2.svg" alt="Rambling Architect logo" width="600">
+  <img src="images/rambling-architect-logo-v2.svg" alt="Rambling Architect logo" width="600">
 </p>
 
 <h1 align="center">eve-ng-labs</h1>
