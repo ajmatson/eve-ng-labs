@@ -24,7 +24,7 @@ Before you import a lab, you must obtain every image it requires from a source y
 
 | Lab | Topic | EVE-NG | Devices |
 |-----|-------|--------|---------|
-| [aruba-vsrx-core](aruba-vsrx-core/) | vSRX inline between an Aruba core switch and the physical network | 7.x | vSRX, Aruba CX, VPCS |
+| [juniper-vxlan-core](aruba-vsrx-core/) | Simple VxLAN config between two Juniper vEX core layer 3 switches and two VPS on each side. | 7.x | Juniper vEX, VPCS |
 
 ## Using a lab
 
