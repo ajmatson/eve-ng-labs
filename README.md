@@ -1,44 +1,59 @@
-# eve-ng-labs
+<p align="center">
+  <img src="rambling-architect-logo-v2.svg" alt="Rambling Architect logo" width="600">
+</p>
 
-A shared collection of EVE-NG network labs, provided so others can study, test, and build on them.
+<h1 align="center">eve-ng-labs</h1>
 
-## About this repository
+<p align="center">
+  Shared EVE-NG network and security labs, with topologies, configurations, and step-by-step instructions.
+</p>
 
-This repository contains lab topologies and instructions created in **EVE-NG Version 7.x**. Each lab includes a topology file, device configurations where applicable, and a README that describes the devices used and the steps to run the lab.
+---
 
-## Compatibility
+## About
 
-These labs were created on EVE-NG 7.x and may not work on the older 6.x Community Edition. Check the README in each lab folder for the exact EVE-NG version and device images used.
+This repository is a shared collection of EVE-NG labs for studying, testing, and building network and security designs. The labs were created on **EVE-NG Version 7.x**. They may not work on the older 6.x Community Edition.
 
 ## Device images are not included
 
-This repository does not include vendor device images, such as Cisco, Juniper, Palo Alto, or Aruba images. These images are licensed by their vendors, and redistributing them is not permitted.
+This repository does not contain vendor device images such as Cisco, Juniper, Palo Alto, or Aruba. These images are licensed by their vendors, and redistributing them is not permitted.
 
-To run a lab, you must obtain every required image yourself, from a source you are licensed to use. Each lab's README lists the devices and image versions it expects. Verify that you have the correct images and the right to use them before you import a lab.
+Before you import a lab, you must obtain every image it requires from a source you are licensed to use. Each lab's README lists the devices and image versions it expects.
+
+## Lab index
+
+| Lab | Topic | EVE-NG | Devices |
+|-----|-------|--------|---------|
+| [aruba-vsrx-core](aruba-vsrx-core/) | vSRX inline between an Aruba core switch and the physical network | 7.x | vSRX, Aruba CX, VPCS |
+
+## Using a lab
+
+1. Clone this repository or download the folder for the lab you want.
+2. Read the lab's README and confirm you have every required image.
+3. Import the `.unl` topology file into your EVE-NG server.
+4. Load the configurations from the `configs/` folder, if the lab includes them.
+5. Follow the steps in the lab's README.
 
 ## Repository layout
 
 ```
 eve-ng-labs/
 ├── README.md
+├── rambling-architect-logo-v2.svg
 └── <lab-name>/
-    ├── README.md        # Devices, required images, and step-by-step instructions
+    ├── README.md        # Purpose, devices, required images, and steps
     ├── <lab-name>.unl   # EVE-NG topology file
     └── configs/         # Starting device configurations
 ```
 
-## Using a lab
+## Contributing
 
-1. Clone this repository or download the lab folder you want.
-2. Read the lab's README and confirm you have every listed device image.
-3. Import the `.unl` file into your EVE-NG server.
-4. Load the configurations from the `configs/` folder, if the lab includes them.
-5. Follow the lab's instructions.
+Each lab folder should include a README that covers its purpose, devices, required images with versions, IP plan, and test steps. Before you commit, remove passwords, keys, license strings, and any public or internal addresses you don't want to publish.
 
 ## Disclaimer
 
-These labs are provided as-is, without warranty of any kind. They are intended for learning and testing in isolated environments. Do not use them on production networks. Review all configurations before use, and remove any credentials or addresses you do not want to use.
+These labs are provided as-is, without warranty. They are intended for learning and testing in isolated environments, not on production networks. Review every configuration before use.
 
 ## License
 
-This repository is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for details. Vendor device images and trademarks are not covered by this license.
+Licensed under the [GNU General Public License v3.0](LICENSE). Vendor device images and trademarks are not covered by this license.
